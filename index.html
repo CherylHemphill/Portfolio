@@ -12,23 +12,23 @@
 </head>
 
 <body>
-    <header class="Name">
-        <h1> Cheryl Hemphill</h1>
-
-        <figure>
+    
+     <header class="Name">
+     <figure class="profile-pic-figure">
             <img src="assets/images/profile.jpg" alt="profile picture" width="320" height="440"/>
-        </figure>
-
+        <figcaption class="offscreen">Cheryl Hemphill</figcaption>
+    </figure>
+     <h1> Cheryl Hemphill</h1>
         <nav> 
             <ul>
                 <li>
-                    <a href="About-Me">About Me</a>
+                    <a href="#About-me">About Me</a>
                 </li>
                 <li>
-                    <a href="Contact">Contact</a>
+                    <a href="#Contact">Contact</a>
                 </li>
                 <li>
-                    <a href="My-Work">My Projects</a>
+                    <a href="#My-Work">My Projects</a>
                 </li>
             </ul>
         </nav>
@@ -37,32 +37,31 @@
    <main>
 
     
-     <article id="About-Me" class="card">
+     <section id="About-Me" class="card">
         <h2 class="about-me">About Me</h2>
         
         <p>I spent 14 years in the medical field and made the decision to write a new chapter of my life. I began the journey into web development at the beginning of 2023. Venturing outside of my comfort zone empowers personal growth in all aspects of my life.</p>
        
-     </article>
+     </section>
     
 <section id="My-Work" class="card">
         <h2 class="projects">My Projects</h2>
-        <figure>
-            <img src="assets/images/projects.png" alt="my projects" width="200" height="200">
-        </figure>
-        <ul>
-            <li>Project1</li>
-            <li>Project2</li>
-            <li>Project3</li>
-            <li>Project4</li>
-            <li>Project5</li>
-            <li>Project6</li>
-        </ul>
-            <p> <a href="https://github.com/CherylHemphill"> <strong>GitHub</strong> </a> </p>
+         <!--  <p> <a href="https://github.com/CherylHemphill"> <strong>GitHub</strong> </a> </p> -->
+
+        <div class="parent">
+            <section id="lg"> <a href="https://github.com/CherylHemphill"> GitHub</a></section>
+            <section> <a href="https://github.com/CherylHemphill/Horiseon-Social-Services"> Semantic HTML</a></section>
+            <section> <a href="https://github.com/CherylHemphill/prework-study-guide"> Coding Basics Guide</a></section>
+            <section> <a href="https://github.com/CherylHemphill/Portfolio"> Portfolio Code</a></section>
+            <section>Project5</section>
+            <section>Project6</section>
+            <section>Project7</section>
+        </div>
 </section>
 
 <section id="Contact" class="card">
         <h2 class="contact">Contact</h2>
-        <figure> <img src="assets/images/contact-icon.png" alt="Contact Information" width="200" height="200"></figure>
+        <figure> <img src="assets/images/contact-icon.png" alt="Contact Information" width="100" height="100"></figure>
 
             <ul class="contact">
                 <li>
@@ -78,6 +77,6 @@
 </body>
 
 <footer>
-    <span>Tacos 🌮, Dogs 🐩, and Wine 🍷</span>
+    <span>Tacos 🌮, Dogs 🐩, Plants 🪴, and Wine 🍷</span>
 </footer>
 </html>
