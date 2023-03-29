@@ -1,15 +1,15 @@
 /* Begin reset*/
 
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
-img {
+ img {
     display: block;
     
-}
+} 
 /*End reset*/
 
  .offscreen {
@@ -18,21 +18,25 @@ img {
  }
 
 body {
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     line-height: 1.5;
     font-size: 1.5rem;
-    background-color: aliceblue;
+    background-color:  rgb(185, 194, 187);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header, footer {
-    position: sticky;
+    /* position: sticky; */
     text-align: center;
+    width: 100%;
 }
 
 header {
     top: 0;
+    overflow: auto;
 }
 
 footer {
@@ -61,36 +65,38 @@ footer {
 
 .Name {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    padding: 1%;
+    /* padding: 1%; */
     border-bottom: 2px solid black;
-    gap: 30px;
-    background-color: rgb(91, 161, 163);
+    /* gap: 30px; */
+    /* background-color: rgb(91, 161, 163); */
     color: rgb(245, 247, 247);
     background-image: url('../images/tropical-green-leaves-background.jpg');
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
     background-size: cover;
+    width: 100%;
 }
 
-h1 {
-    display: inline;
-    
+h1 {  
     font-size: 300%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px 5px black;
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 
+
 header nav ul {
-    display: inline;
-    align-items: flex-end;
-    margin-left: 700px;
+   
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
     font-weight: 200;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style-type: none;
     text-decoration: none;
-    padding: 3%;
+    /* padding: 1%; */
     justify-content: space-around;
  }
 
@@ -98,7 +104,7 @@ header nav ul {
 nav a {
     color: rgb(245, 247, 247);
     font-weight: 200;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 nav a:hover, nav a:focus {
@@ -118,6 +124,7 @@ main {
     max-width: fit-content;
     place-content: center;
     margin: 2% auto;
+    background-color: rgb(185, 194, 187);
 }
 
 h2 {
@@ -213,20 +220,22 @@ justify-content: flex-end;
 
 /* Contact Section */
 
-.contact img {
+/* .contact img {
     padding:15px
     margin: 20px;
     
-}
+} */
 
-.contact li {
+.contact li, ul {
     list-style: none;
     margin-left: 5px;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* || Small ||*/
 
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 481px) {
     body {
         background-color: rgb(107, 150, 123);
         background-image: radial-gradient(whitesmoke, rgb(107, 143, 118));
@@ -235,28 +244,16 @@ justify-content: flex-end;
 }
 /* || Medium ||*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         background-color: rgb(107, 150, 123);
         background-image: radial-gradient(whitesmoke, rgb(107, 143, 118));
     }
 
 }
-/* || Large ||*/
 
-@media screen and (min-width: 1024px) {
-    body {
-        background-color: rgb(160, 189, 173);
-        background-image: radial-gradient(whitesmoke, rgb(160, 189, 173));
+@media screen and (max-width: 481px) {
+    header {
+        
     }
-
-}
-/* || X-Large ||*/
-
-@media screen and (min-width: 1200px) {
-    body {
-        background-color: rgb(160, 189, 173);
-        background-image: radial-gradient(whitesmoke, rgb(160, 189, 173));
-    }
-
 }
