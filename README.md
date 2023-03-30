@@ -13,6 +13,8 @@ To view the portfolio follow the link:
 
 Inside the portfolio you will have links to access my deployed projects and to view the code in GitHub. 
 
+<link  href=assets/images/Cheryl%20Hemphill%20Portfolio.gif/>
+
 
 # License
 
