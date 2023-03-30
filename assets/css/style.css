@@ -10,6 +10,14 @@
     display: block;
     
 } 
+:root {
+    --LightText: rgb(245, 247, 247);
+    --Font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --green: rgb(13, 46, 33);
+    --visited:rgb(240, 48, 214);
+    --hover: rgb(211, 159, 235);
+}
+
 /*End reset*/
 
  .offscreen {
@@ -25,7 +33,7 @@ body {
     line-height: 1.5;
     font-size: 1.5rem;
     background-color:  rgb(185, 194, 187);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--Font);
 }
 
 header, footer {
@@ -41,12 +49,12 @@ header {
 
 footer {
     bottom: 0;
-    background-color: rgb(13, 46, 33);
-    color: rgb(245, 247, 247);
+    background-color: var(--green);
+    color: var(--LightText);
     align-items:center;
     font-size: smaller;
     font-weight: 100;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--Font);
 }
 
 /* Top Banner Begin */
@@ -72,7 +80,7 @@ footer {
     border-bottom: 2px solid black;
     /* gap: 30px; */
     /* background-color: rgb(91, 161, 163); */
-    color: rgb(245, 247, 247);
+    color: var(--LightText);
     background-image: url('../images/tropical-green-leaves-background.jpg');
     /* background-repeat: repeat; */
     background-size: cover;
@@ -81,7 +89,7 @@ footer {
 
 h1 {  
     font-size: 300%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--Font);
     text-shadow: 2px 2px 5px black;
     /* margin-left: 250px; */
 }
@@ -93,7 +101,7 @@ header nav ul {
     flex-direction: column;
     padding: 5px;
     font-weight: 200;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--Font);
     list-style-type: none;
     text-decoration: none;
     /* padding: 1%; */
@@ -102,15 +110,18 @@ header nav ul {
 
 
 nav a {
-    color: rgb(245, 247, 247);
+    color: (--LightText);
     font-weight: 200;
     /* padding: 5%; */
 }
 
 nav a:hover, nav a:focus {
-    color: rgb(211, 159, 235);
+    color: var(--hover);
 }
 
+nav a:visited {
+    color:var(--visited);
+}
 /* Top Banner End */
 
 /* Main Body Begin */
@@ -128,34 +139,29 @@ main {
 }
 
 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--Font);
     font-weight: 400;
     padding: 10px;
+    border-bottom-style: groove;
+    border-color: var(--green);
+    border-right-style: ridge;
+    border-width: 10px;
 }
 
 /* About Me Section */
 
-.about-me , .contact , .projects {
-    position: static;
-    display: inline-flex;
-    
-   
-}
 
-.about-me p {
+.me {
 display: flex;
 flex-wrap: wrap;
 margin: 25px;
-font-size: 1rem;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-justify-content: flex-end;
+padding: 40px;
+font-size: 1.4rem;
+font-family:var(--Font);
+justify-content: center;
+
 }
 
-
- /* .card {  
-    display: flex;
-    border-right: 3px solid rgb(9, 54, 3) ;
-}*/
 
 /* My Projects Section */
 
@@ -178,14 +184,20 @@ justify-content: flex-end;
     margin: 1%;
     background-color: rgb(213, 218, 215); 
     
+    
 }
+.parent section:hover {
+  color: var(--hover);
+  border-color: var(--hover);
+  }
 
-.parent section a:hover, a:focus {
+/* .parent a:hover, .parent a:focus { 
     color: rgb(211, 159, 235);
-}
+    box-shadow: inset 0 0 15px rgb(211, 159, 235);
+}*/
 
 .parent section a:visited {
-    color:rgb(9, 54, 3)
+    color:var(--visited);
 }
 
 #lg {
@@ -209,20 +221,12 @@ justify-content: flex-end;
 }*/
 
 
-/* .work {
-    border: 2px solid rgb(9, 54, 3);
-    padding: 4%;
-    min-width: 30%;
-    min-height: 20%;
-    margin: 10px;
-    text-align: center; 
-}*/
-
 /* Contact Section */
 
-/* .contact img {
+ /* .contact  {  
     padding:15px
     margin: 20px;
+    
     
 } */
 
@@ -230,9 +234,12 @@ justify-content: flex-end;
     list-style: none;
     margin-left: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
+.contact a:hover{
+    color: var(--hover);
+}
 /* || Small ||*/
 
 @media screen and (max-width: 481px) {
@@ -241,7 +248,11 @@ justify-content: flex-end;
         background-image: radial-gradient(whitesmoke, rgb(107, 143, 118));
     }
 
+   nav {
+    display: none; 
+    }
 }
+   
 /* || Medium ||*/
 
 @media screen and (max-width: 768px) {
@@ -252,8 +263,8 @@ justify-content: flex-end;
 
 }
 
-@media screen and (max-width: 481px) {
-    header {
-        
-    }
-}
+
+
+
+    
+
