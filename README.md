@@ -17,7 +17,8 @@ Inside the portfolio you will have links to access my deployed projects and to v
 
 <link  href=assets/images/Cheryl%20Hemphill%20Portfolio.gif/>
 
-![Cheryl Hemphill Portfolio](https://user-images.githubusercontent.com/126039394/228996743-569a995e-03e5-4f30-b4e0-1525a67d7ef3.gif)
+![Cheryl Hemphill Portfolio (1)](https://user-images.githubusercontent.com/126039394/229019717-0a46c937-6099-4cde-9cdf-106018859f83.gif)
+
 
 # License
 
