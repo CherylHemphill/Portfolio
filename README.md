@@ -9,6 +9,8 @@ I have created this digital portfolio to showcase my projects to better share wi
 Open browser of your choice and follow the link provided below. Code can be viewed within GitHub and through VS Code.
 To view the portfolio follow the link:
 
+https://cherylhemphill.github.io/Portfolio/
+
 # Usage
 
 Inside the portfolio you will have links to access my deployed projects and to view the code in GitHub. 
