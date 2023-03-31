@@ -28,8 +28,4 @@ University of Texas at Austin Professional Education Full Stack Web Development 
 
 I have also used several YouTube educational videos to grow my knowledge with HTML, and CSS coding abilities:
 
-Dave Gray
-Kevin Powell
-Web Dev Simplified
-The Net Ninja
-Web Accessibility Education
+Dave Gray, Kevin Powell, Web Dev Simplified, The Net Ninja, Web Accessibility Education
