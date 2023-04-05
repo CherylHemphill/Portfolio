@@ -27,9 +27,9 @@
 
 body {
     margin: 0;
-    width: 100%;
+    /* width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     line-height: 1.5;
     font-size: 1.5rem;
     background-color:  rgb(185, 194, 187);
@@ -43,8 +43,8 @@ header, footer {
 }
 
 header {
-    top: 0;
-    overflow: auto;
+    /* top: 0; */
+    /* overflow: auto; */
 }
 
 footer {
@@ -73,6 +73,7 @@ footer {
 
 .Name {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
@@ -221,6 +222,8 @@ justify-content: center;
     margin-left: 5px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .contact a:hover{
@@ -247,6 +250,10 @@ justify-content: center;
         background-image: radial-gradient(whitesmoke, rgb(107, 143, 118));
     }
 
+    header nav ul {
+        flex-direction: row;
+        padding-bottom: 12px;
+    }
 }
 
 
